@@ -1,0 +1,17 @@
+.button{
+    width: 150px;
+    background-color: #00b7ff;
+
+    &:hover{
+        background-color: #00eeff;
+    }
+};
+
+.redButton{
+    width: 150px;
+    background-color: #ff0000;
+
+    &:hover{
+        background-color: #8f0000;
+    }
+};
