@@ -21,7 +21,7 @@ export function buildWebpack(options: BuildOptions): webpack.Configuration{
             filename: '[name].[contenthash].js',
             clean: true
         },
-        devtool: isDev && 'inline-source-map',
+        devtool: isDev ? 'eval-cheap-module-source-map' : 'inline-source-map',
         devServer: isDev ? buildDevServer(options) : undefined,
         plugins: buildPlugins(options)
     }
