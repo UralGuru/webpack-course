@@ -11,12 +11,14 @@ export const App = () => {
   }
 
   return (
-    <>
-        <h1>PLATFORM={__PLATFORM__}</h1>
+    <div data-test-id={'App'}>
+        <h1 data-test-id={'Platform'}>PLATFORM={__PLATFORM__}</h1>
         <div>{count}</div>
 
         <button className={classes.button} onClick={()=>setCount(count-1)}>-</button>
         <button className={classes.redButton} onClick={()=>setCount(count+1)}>+</button>
+
+        <img src="" alt="" />
 
         <div>
           <Link to={'/about'}>About</Link>
@@ -26,7 +28,7 @@ export const App = () => {
         
 
         <Outlet />
-    </>
+    </div>
   );
 };
 
